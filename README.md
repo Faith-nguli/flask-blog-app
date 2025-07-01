@@ -1,1 +1,1 @@
-# flask-blogging-project
+# flask-blog
