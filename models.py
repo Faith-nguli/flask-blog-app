@@ -10,7 +10,9 @@ class User(db.Model, UserMixin):
     username = db.Column(db.String(150), unique=True, nullable=False)
     email = db.Column(db.String(150), unique=True, nullable=False)
     password = db.Column(db.String(256), nullable=False)
-    role = db.Column(db.String(20), default='reader')  
+    role = db.Column(db.String(20), default='reader') 
+    profile_image = db.Column(db.String(200), nullable=True, default='default.jpg')
+
     
     # One-to-many: A user can write many posts
     posts = db.relationship('BlogPost', backref='author', lazy=True)
