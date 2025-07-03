@@ -4,14 +4,12 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-flask-sqlalchemy = "*"
-flask-bcrypt = "*"
-flask-login = "*"
-python-dotenv = "*"
-flask-migrate = "*"
 flask = "*"
-jwt = "*"
-extended = "*"
+flask-sqlalchemy = "*"
+flask-migrate = "*"
+flask-login = "*"
+flask-bcrypt = "*"
+python-dotenv = "*"
 
 [dev-packages]
 
